@@ -8,8 +8,8 @@ public class SharedPref {
     private static final String FIRST_LAUNCH = "_.FIRST_LAUNCH";
     private static final String CLICK_OFFER = "_.MAX_CLICK_OFFER";
     private static final int MAX_CLICK_OFFER = 10;
-    private Context context;
-    private SharedPreferences sharedPreferences;
+    private final Context context;
+    private final SharedPreferences sharedPreferences;
 
     public SharedPref(Context context) {
         this.context = context;

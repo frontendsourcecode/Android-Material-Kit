@@ -18,9 +18,8 @@ import java.util.List;
 
 public class AdapterListShopCategoryImg extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<ShopCategory> items = new ArrayList<>();
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterListShopCategoryImg(Context context, List<ShopCategory> items) {

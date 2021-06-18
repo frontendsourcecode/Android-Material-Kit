@@ -17,7 +17,7 @@ import java.util.List;
  */
 public class MainMenuAdapter extends ExpandableRecyclerAdapter<MainMenuAdapter.ListItem> {
 
-    private Context context;
+    private final Context context;
     private OnItemClickListener onItemClickListener = null;
 
     public MainMenuAdapter(Context context, List<ListItem> items, OnItemClickListener onItemClickListener) {

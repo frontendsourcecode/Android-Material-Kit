@@ -25,9 +25,9 @@ import java.util.List;
 
 public class DialogAddReview extends AppCompatActivity {
 
+    private final List<String> items = new ArrayList<>();
     private ListView listView;
     private TextView txt_no_item;
-    private List<String> items = new ArrayList<>();
     private ArrayAdapter adapter;
 
     @Override

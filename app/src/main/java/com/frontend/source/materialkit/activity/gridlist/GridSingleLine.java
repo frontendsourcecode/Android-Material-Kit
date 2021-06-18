@@ -11,12 +11,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.adapter.AdapterGridSingleLine;
 import com.frontend.source.materialkit.data.DataGenerator;
 import com.frontend.source.materialkit.utils.Tools;
 import com.frontend.source.materialkit.widget.SpacingItemDecoration;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 

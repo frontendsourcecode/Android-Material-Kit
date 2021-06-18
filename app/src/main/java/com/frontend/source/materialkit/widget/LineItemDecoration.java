@@ -17,7 +17,7 @@ public class LineItemDecoration extends RecyclerView.ItemDecoration {
     private static final int[] ATTRS = new int[]{
             android.R.attr.listDivider
     };
-    private Drawable mDivider;
+    private final Drawable mDivider;
     private int mOrientation;
 
     public LineItemDecoration(Context context, int orientation) {

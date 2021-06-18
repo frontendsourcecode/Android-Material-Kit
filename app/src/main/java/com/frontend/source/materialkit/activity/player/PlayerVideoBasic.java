@@ -13,10 +13,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSeekBar;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.MusicUtils;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class PlayerVideoBasic extends AppCompatActivity {
 

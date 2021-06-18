@@ -18,11 +18,9 @@ import java.util.List;
 
 public class AdapterGridTwoLineLight extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<Image> items = new ArrayList<>();
-
     private OnLoadMoreListener onLoadMoreListener;
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterGridTwoLineLight(Context context, List<Image> items) {

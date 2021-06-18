@@ -18,11 +18,9 @@ import java.util.List;
 
 public class AdapterGridAlbums extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<Image> items = new ArrayList<>();
-
     private OnLoadMoreListener onLoadMoreListener;
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterGridAlbums(Context context, List<Image> items) {

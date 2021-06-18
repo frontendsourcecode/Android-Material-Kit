@@ -11,13 +11,13 @@ import android.widget.TextView;
 
 import androidx.annotation.NonNull;
 
+import com.frontend.source.materialkit.R;
+import com.frontend.source.materialkit.model.People;
+import com.frontend.source.materialkit.utils.Tools;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
 import com.google.android.material.bottomsheet.BottomSheetDialog;
 import com.google.android.material.bottomsheet.BottomSheetDialogFragment;
-import com.frontend.source.materialkit.R;
-import com.frontend.source.materialkit.model.People;
-import com.frontend.source.materialkit.utils.Tools;
 
 
 public class FragmentBottomSheetDialogFull extends BottomSheetDialogFragment {

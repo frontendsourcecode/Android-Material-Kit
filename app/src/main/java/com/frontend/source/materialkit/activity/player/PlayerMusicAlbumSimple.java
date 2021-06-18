@@ -15,29 +15,27 @@ import android.widget.ProgressBar;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.MusicUtils;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 public class PlayerMusicAlbumSimple extends AppCompatActivity {
 
+    // Handler to update UI timer, progress bar etc,.
+    private final Handler mHandler = new Handler();
     private View parent_view;
     private FloatingActionButton bt_play;
     private ProgressBar song_progressbar;
-
     // Media Player
     private MediaPlayer mp;
-    // Handler to update UI timer, progress bar etc,.
-    private Handler mHandler = new Handler();
-
     //private SongsManager songManager;
     private MusicUtils utils;
     /**
      * Background Runnable thread
      */
-    private Runnable mUpdateTimeTask = new Runnable() {
+    private final Runnable mUpdateTimeTask = new Runnable() {
         public void run() {
             updateTimerAndSeekbar();
             // Running this thread after 10 milliseconds

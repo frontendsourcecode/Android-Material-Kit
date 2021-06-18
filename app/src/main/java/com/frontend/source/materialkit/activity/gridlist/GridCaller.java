@@ -10,13 +10,13 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.recyclerview.widget.GridLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.adapter.AdapterGridCaller;
 import com.frontend.source.materialkit.data.DataGenerator;
 import com.frontend.source.materialkit.model.People;
 import com.frontend.source.materialkit.utils.Tools;
 import com.frontend.source.materialkit.widget.SpacingItemDecoration;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 

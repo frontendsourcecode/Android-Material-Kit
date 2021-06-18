@@ -8,7 +8,7 @@ import java.util.Random;
 
 public class MaterialColor {
 
-    private static Random r = new Random();
+    private static final Random r = new Random();
 
     public static int randInt(int max) {
         return r.nextInt(max);

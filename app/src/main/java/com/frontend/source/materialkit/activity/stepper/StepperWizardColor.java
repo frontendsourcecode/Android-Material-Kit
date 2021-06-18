@@ -21,16 +21,33 @@ import com.frontend.source.materialkit.utils.Tools;
 public class StepperWizardColor extends AppCompatActivity {
 
     private static final int MAX_STEP = 4;
-
-    private ViewPager viewPager;
-    private MyViewPagerAdapter myViewPagerAdapter;
-    private Button btn_got_it;
-    private String[] title_array = {
+    private final String[] title_array = {
             "Ready to Travel",
             "Pick the Ticket",
             "Flight to Destination",
             "Enjoy Holiday"
     };
+    private final String[] description_array = {
+            "Choose your destination, plan Your trip. Pick the best place for Your holiday",
+            "Select the day, pick Your ticket. We give you the best prices. We guarantee!",
+            "Safe and Comfort flight is our priority. Professional crew and services.",
+            "Enjoy your holiday, Dont forget to feel the moment and take a photo!",
+    };
+    private final int[] about_images_array = {
+            R.drawable.img_wizard_1,
+            R.drawable.img_wizard_2,
+            R.drawable.img_wizard_3,
+            R.drawable.img_wizard_4
+    };
+    private final int[] color_array = {
+            R.color.red_600,
+            R.color.blue_grey_600,
+            R.color.purple_600,
+            R.color.deep_orange_600
+    };
+    private ViewPager viewPager;
+    private MyViewPagerAdapter myViewPagerAdapter;
+    private Button btn_got_it;
     //  viewpager change listener
     ViewPager.OnPageChangeListener viewPagerPageChangeListener = new ViewPager.OnPageChangeListener() {
 
@@ -53,24 +70,6 @@ public class StepperWizardColor extends AppCompatActivity {
         public void onPageScrollStateChanged(int arg0) {
 
         }
-    };
-    private String[] description_array = {
-            "Choose your destination, plan Your trip. Pick the best place for Your holiday",
-            "Select the day, pick Your ticket. We give you the best prices. We guarantee!",
-            "Safe and Comfort flight is our priority. Professional crew and services.",
-            "Enjoy your holiday, Dont forget to feel the moment and take a photo!",
-    };
-    private int[] about_images_array = {
-            R.drawable.img_wizard_1,
-            R.drawable.img_wizard_2,
-            R.drawable.img_wizard_3,
-            R.drawable.img_wizard_4
-    };
-    private int[] color_array = {
-            R.color.red_600,
-            R.color.blue_grey_600,
-            R.color.purple_600,
-            R.color.deep_orange_600
     };
 
     @Override

@@ -13,9 +13,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BottomNavigationDark extends AppCompatActivity {
 

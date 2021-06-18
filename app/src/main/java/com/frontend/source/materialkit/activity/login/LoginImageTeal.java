@@ -7,9 +7,9 @@ import android.widget.ProgressBar;
 
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.frontend.source.materialkit.R;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.google.android.material.snackbar.Snackbar;
-import com.frontend.source.materialkit.R;
 
 public class LoginImageTeal extends AppCompatActivity {
 

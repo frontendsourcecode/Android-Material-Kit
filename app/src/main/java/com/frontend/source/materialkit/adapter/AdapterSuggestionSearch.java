@@ -10,8 +10,8 @@ import android.widget.TextView;
 
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.gson.Gson;
 import com.frontend.source.materialkit.R;
+import com.google.gson.Gson;
 
 import java.io.Serializable;
 import java.util.ArrayList;
@@ -22,10 +22,9 @@ public class AdapterSuggestionSearch extends RecyclerView.Adapter<AdapterSuggest
 
     private static final String SEARCH_HISTORY_KEY = "_SEARCH_HISTORY_KEY";
     private static final int MAX_HISTORY_ITEMS = 5;
-
+    private final SharedPreferences prefs;
     private List<String> items = new ArrayList<>();
     private OnItemClickListener onItemClickListener;
-    private SharedPreferences prefs;
 
     public AdapterSuggestionSearch(Context context) {
         prefs = context.getSharedPreferences("PREF_RECENT_SEARCH", Context.MODE_PRIVATE);

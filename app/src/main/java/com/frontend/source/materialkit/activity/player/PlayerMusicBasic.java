@@ -17,28 +17,26 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSeekBar;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.MusicUtils;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.snackbar.Snackbar;
 
 public class PlayerMusicBasic extends AppCompatActivity {
 
+    // Handler to update UI timer, progress bar etc,.
+    private final Handler mHandler = new Handler();
     private View parent_view;
     private AppCompatSeekBar seek_song_progressbar;
     private ImageButton bt_play;
-
     // Media Player
     private MediaPlayer mp;
-    // Handler to update UI timer, progress bar etc,.
-    private Handler mHandler = new Handler();
-
     //private SongsManager songManager;
     private MusicUtils utils;
     /**
      * Background Runnable thread
      */
-    private Runnable mUpdateTimeTask = new Runnable() {
+    private final Runnable mUpdateTimeTask = new Runnable() {
         public void run() {
             long totalDuration = mp.getDuration();
             long currentDuration = mp.getCurrentPosition();

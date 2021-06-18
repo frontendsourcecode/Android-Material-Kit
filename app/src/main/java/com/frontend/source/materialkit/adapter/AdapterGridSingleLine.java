@@ -17,11 +17,9 @@ import java.util.List;
 
 public class AdapterGridSingleLine extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<Integer> items = new ArrayList<>();
-
     private OnLoadMoreListener onLoadMoreListener;
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterGridSingleLine(Context context, List<Integer> items) {

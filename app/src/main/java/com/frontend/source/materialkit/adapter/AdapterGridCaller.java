@@ -18,11 +18,9 @@ import java.util.List;
 
 public class AdapterGridCaller extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<People> items = new ArrayList<>();
-
     private OnLoadMoreListener onLoadMoreListener;
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterGridCaller(Context context, List<People> items) {

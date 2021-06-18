@@ -10,9 +10,9 @@ import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.core.widget.NestedScrollView;
 
-import com.google.android.material.bottomnavigation.BottomNavigationView;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.bottomnavigation.BottomNavigationView;
 
 public class BottomNavigationBasic extends AppCompatActivity {
 

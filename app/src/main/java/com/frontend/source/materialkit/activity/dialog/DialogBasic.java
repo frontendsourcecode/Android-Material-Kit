@@ -11,9 +11,9 @@ import androidx.appcompat.app.AlertDialog;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.snackbar.Snackbar;
 
 public class DialogBasic extends AppCompatActivity {
 

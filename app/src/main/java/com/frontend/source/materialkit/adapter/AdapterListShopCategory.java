@@ -17,9 +17,8 @@ import java.util.List;
 
 public class AdapterListShopCategory extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<ShopCategory> items = new ArrayList<>();
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterListShopCategory(Context context, List<ShopCategory> items) {

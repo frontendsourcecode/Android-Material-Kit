@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.ViewCompat;
 
+import com.frontend.source.materialkit.R;
 import com.google.android.material.appbar.AppBarLayout;
 import com.google.android.material.appbar.CollapsingToolbarLayout;
 import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.frontend.source.materialkit.R;
 
 public class ToolbarCollapsePin extends AppCompatActivity {
 

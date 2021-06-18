@@ -30,7 +30,7 @@ import java.util.List;
 
 public class SliderImageCard extends AppCompatActivity {
 
-    private static int[] array_image_product = {
+    private static final int[] array_image_product = {
             R.drawable.image_shop_9,
             R.drawable.image_shop_10,
             R.drawable.image_shop_11,
@@ -134,7 +134,7 @@ public class SliderImageCard extends AppCompatActivity {
 
     private static class AdapterImageSlider extends PagerAdapter {
 
-        private Activity act;
+        private final Activity act;
         private List<Image> items;
 
         private AdapterImageSlider.OnItemClickListener onItemClickListener;

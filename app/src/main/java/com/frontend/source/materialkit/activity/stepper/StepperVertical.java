@@ -16,10 +16,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
 import com.frontend.source.materialkit.utils.ViewAnimation;
+import com.google.android.material.snackbar.Snackbar;
 import com.wdullaer.materialdatetimepicker.date.DatePickerDialog;
 import com.wdullaer.materialdatetimepicker.time.TimePickerDialog;
 
@@ -30,8 +30,8 @@ import java.util.List;
 
 public class StepperVertical extends AppCompatActivity {
 
-    private List<View> view_list = new ArrayList<>();
-    private List<RelativeLayout> step_view_list = new ArrayList<>();
+    private final List<View> view_list = new ArrayList<>();
+    private final List<RelativeLayout> step_view_list = new ArrayList<>();
     private int success_step = 0;
     private int current_step = 0;
     private View parent_view;

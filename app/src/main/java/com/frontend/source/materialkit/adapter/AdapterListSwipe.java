@@ -21,10 +21,9 @@ import java.util.List;
 
 public class AdapterListSwipe extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements SwipeItemTouchHelper.SwipeHelperAdapter {
 
+    private final List<Social> items_swiped = new ArrayList<>();
+    private final Context ctx;
     private List<Social> items = new ArrayList<>();
-    private List<Social> items_swiped = new ArrayList<>();
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterListSwipe(Context context, List<Social> items) {

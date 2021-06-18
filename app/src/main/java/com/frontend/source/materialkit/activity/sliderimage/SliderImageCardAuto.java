@@ -32,33 +32,33 @@ import java.util.List;
 
 public class SliderImageCardAuto extends AppCompatActivity {
 
-    private static int[] array_image_place = {
+    private static final int[] array_image_place = {
             R.drawable.image_12,
             R.drawable.image_13,
             R.drawable.image_14,
             R.drawable.image_15,
             R.drawable.image_8,
     };
-    private static String[] array_title_place = {
+    private static final String[] array_title_place = {
             "Dui fringilla ornare finibus, orci odio",
             "Mauris sagittis non elit quis fermentum",
             "Mauris ultricies augue sit amet est sollicitudin",
             "Suspendisse ornare est ac auctor pulvinar",
             "Vivamus laoreet aliquam ipsum eget pretium",
     };
-    private static String[] array_brief_place = {
+    private static final String[] array_brief_place = {
             "Foggy Hill",
             "The Backpacker",
             "River Forest",
             "Mist Mountain",
             "Side Park",
     };
+    private final Handler handler = new Handler();
     private View parent_view;
     private ViewPager viewPager;
     private LinearLayout layout_dots;
     private AdapterImageSlider adapterImageSlider;
     private Runnable runnable = null;
-    private Handler handler = new Handler();
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -180,7 +180,7 @@ public class SliderImageCardAuto extends AppCompatActivity {
 
     private static class AdapterImageSlider extends PagerAdapter {
 
-        private Activity act;
+        private final Activity act;
         private List<Image> items;
 
         private AdapterImageSlider.OnItemClickListener onItemClickListener;

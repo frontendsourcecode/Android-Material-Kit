@@ -21,6 +21,30 @@ import com.frontend.source.materialkit.utils.Tools;
 public class CardWizard extends AppCompatActivity {
 
     private static final int MAX_STEP = 4;
+    private final String[] about_title_array = {
+            "Ready to Travel",
+            "Pick the Ticket",
+            "Flight to Destination",
+            "Enjoy Holiday"
+    };
+    private final String[] about_description_array = {
+            "Choose your destination, plan Your trip. Pick the best place for Your holiday",
+            "Select the day, pick Your ticket. We give you the best prices. We guarantee!",
+            "Safe and Comfort flight is our priority. Professional crew and services.",
+            "Enjoy your holiday, Don't forget to feel the moment and take a photo!",
+    };
+    private final int[] about_images_array = {
+            R.drawable.img_wizard_1,
+            R.drawable.img_wizard_2,
+            R.drawable.img_wizard_3,
+            R.drawable.img_wizard_4
+    };
+    private final int[] bg_images_array = {
+            R.drawable.image_15,
+            R.drawable.image_10,
+            R.drawable.image_3,
+            R.drawable.image_12
+    };
     //  viewpager change listener
     ViewPager.OnPageChangeListener viewPagerPageChangeListener = new ViewPager.OnPageChangeListener() {
 
@@ -41,30 +65,6 @@ public class CardWizard extends AppCompatActivity {
     };
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
-    private String[] about_title_array = {
-            "Ready to Travel",
-            "Pick the Ticket",
-            "Flight to Destination",
-            "Enjoy Holiday"
-    };
-    private String[] about_description_array = {
-            "Choose your destination, plan Your trip. Pick the best place for Your holiday",
-            "Select the day, pick Your ticket. We give you the best prices. We guarantee!",
-            "Safe and Comfort flight is our priority. Professional crew and services.",
-            "Enjoy your holiday, Don't forget to feel the moment and take a photo!",
-    };
-    private int[] about_images_array = {
-            R.drawable.img_wizard_1,
-            R.drawable.img_wizard_2,
-            R.drawable.img_wizard_3,
-            R.drawable.img_wizard_4
-    };
-    private int[] bg_images_array = {
-            R.drawable.image_15,
-            R.drawable.image_10,
-            R.drawable.image_3,
-            R.drawable.image_12
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

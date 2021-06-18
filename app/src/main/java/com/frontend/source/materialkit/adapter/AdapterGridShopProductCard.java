@@ -21,9 +21,8 @@ import java.util.List;
 
 public class AdapterGridShopProductCard extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<ShopProduct> items = new ArrayList<>();
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
     private OnMoreButtonClickListener onMoreButtonClickListener;
 

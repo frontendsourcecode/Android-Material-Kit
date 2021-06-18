@@ -18,8 +18,8 @@ import java.util.List;
 
 public class AdapterCardViewImg extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<CardViewImg> items = new ArrayList<>();
-    private Context ctx;
 
     public AdapterCardViewImg(Context context, List<CardViewImg> items) {
         this.items = items;

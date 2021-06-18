@@ -23,10 +23,8 @@ import java.util.List;
 
 public class ProgressOnScroll extends AppCompatActivity {
 
+    private final int item_per_display = 6;
     private View parent_view;
-
-    private int item_per_display = 6;
-
     private RecyclerView recyclerView;
     private AdapterGridScrollProgress mAdapter;
 

@@ -17,36 +17,33 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.adapter.AdapterListMusicSong;
 import com.frontend.source.materialkit.data.DataGenerator;
 import com.frontend.source.materialkit.model.MusicSong;
 import com.frontend.source.materialkit.utils.MusicUtils;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 
 public class PlayerMusicSongList extends AppCompatActivity {
 
+    // Handler to update UI timer, progress bar etc,.
+    private final Handler mHandler = new Handler();
     private View parent_view;
     private RecyclerView recyclerView;
     private ImageButton bt_play;
     private ProgressBar song_progressbar;
-
     private AdapterListMusicSong mAdapter;
-
     // Media Player
     private MediaPlayer mp;
-    // Handler to update UI timer, progress bar etc,.
-    private Handler mHandler = new Handler();
-
     //private SongsManager songManager;
     private MusicUtils utils;
     /**
      * Background Runnable thread
      */
-    private Runnable mUpdateTimeTask = new Runnable() {
+    private final Runnable mUpdateTimeTask = new Runnable() {
         public void run() {
             updateTimerAndSeekbar();
             // Running this thread after 10 milliseconds

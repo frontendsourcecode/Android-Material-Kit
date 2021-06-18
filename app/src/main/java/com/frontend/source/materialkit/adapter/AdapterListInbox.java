@@ -20,11 +20,10 @@ import java.util.List;
 
 public class AdapterListInbox extends RecyclerView.Adapter<AdapterListInbox.ViewHolder> {
 
-    private Context ctx;
-    private List<Inbox> items;
+    private final Context ctx;
+    private final List<Inbox> items;
+    private final SparseBooleanArray selected_items;
     private OnClickListener onClickListener = null;
-
-    private SparseBooleanArray selected_items;
     private int current_selected_idx = -1;
 
     public AdapterListInbox(Context mContext, List<Inbox> items) {

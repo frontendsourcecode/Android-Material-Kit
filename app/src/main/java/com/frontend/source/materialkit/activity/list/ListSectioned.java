@@ -11,12 +11,12 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.adapter.AdapterListSectioned;
 import com.frontend.source.materialkit.data.DataGenerator;
 import com.frontend.source.materialkit.model.People;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.snackbar.Snackbar;
 
 import java.util.List;
 

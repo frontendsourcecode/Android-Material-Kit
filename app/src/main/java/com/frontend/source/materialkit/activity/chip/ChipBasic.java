@@ -14,23 +14,23 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.recyclerview.widget.LinearLayoutManager;
 import androidx.recyclerview.widget.RecyclerView;
 
-import com.pchmn.materialchips.ChipsInput;
-import com.pchmn.materialchips.model.ChipInterface;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.adapter.AdapterContacts;
 import com.frontend.source.materialkit.data.DataGenerator;
 import com.frontend.source.materialkit.model.People;
 import com.frontend.source.materialkit.model.PeopleChip;
 import com.frontend.source.materialkit.utils.Tools;
+import com.pchmn.materialchips.ChipsInput;
+import com.pchmn.materialchips.model.ChipInterface;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class ChipBasic extends AppCompatActivity {
 
+    private final List<PeopleChip> items = new ArrayList<>();
+    private final List<ChipInterface> items_added = new ArrayList<>();
     private ChipsInput mChipsInput;
-    private List<PeopleChip> items = new ArrayList<>();
-    private List<ChipInterface> items_added = new ArrayList<>();
     private List<People> items_people = new ArrayList<>();
 
 

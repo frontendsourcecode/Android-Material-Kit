@@ -20,9 +20,8 @@ public class AdapterListFolderFile extends RecyclerView.Adapter<RecyclerView.Vie
 
     private final int VIEW_ITEM = 1;
     private final int VIEW_SECTION = 0;
-
+    private final Context ctx;
     private List<FolderFile> items = new ArrayList<>();
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
     private int animation_type = 0;
     private int lastPosition = -1;

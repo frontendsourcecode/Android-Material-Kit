@@ -13,20 +13,20 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
 
 public class ShoppingProductAdvDetails extends AppCompatActivity {
 
-    private static int[] array_color_fab = {
+    private static final int[] array_color_fab = {
             R.id.fab_color_blue,
             R.id.fab_color_pink,
             R.id.fab_color_grey,
             R.id.fab_color_green
     };
-    private static int[] array_size_bt = {
+    private static final int[] array_size_bt = {
             R.id.bt_size_s,
             R.id.bt_size_m,
             R.id.bt_size_l,

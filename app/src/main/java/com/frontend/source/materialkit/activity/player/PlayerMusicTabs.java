@@ -19,40 +19,36 @@ import androidx.fragment.app.FragmentManager;
 import androidx.fragment.app.FragmentPagerAdapter;
 import androidx.viewpager.widget.ViewPager;
 
-import com.google.android.material.snackbar.Snackbar;
-import com.google.android.material.tabs.TabLayout;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.adapter.AdapterListMusicSong;
 import com.frontend.source.materialkit.fragment.FragmentMusicAlbum;
 import com.frontend.source.materialkit.fragment.FragmentMusicSong;
 import com.frontend.source.materialkit.utils.MusicUtils;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.snackbar.Snackbar;
+import com.google.android.material.tabs.TabLayout;
 
 import java.util.ArrayList;
 import java.util.List;
 
 public class PlayerMusicTabs extends AppCompatActivity {
 
+    // Handler to update UI timer, progress bar etc,.
+    private final Handler mHandler = new Handler();
     public View parent_view;
-
     private ViewPager view_pager;
     private TabLayout tab_layout;
-
     private ImageButton bt_play;
     private ProgressBar song_progressbar;
     private AdapterListMusicSong mAdapter;
-
     // Media Player
     private MediaPlayer mp;
-    // Handler to update UI timer, progress bar etc,.
-    private Handler mHandler = new Handler();
-
     //private SongsManager songManager;
     private MusicUtils utils;
     /**
      * Background Runnable thread
      */
-    private Runnable mUpdateTimeTask = new Runnable() {
+    private final Runnable mUpdateTimeTask = new Runnable() {
         public void run() {
             updateTimerAndSeekbar();
             // Running this thread after 10 milliseconds

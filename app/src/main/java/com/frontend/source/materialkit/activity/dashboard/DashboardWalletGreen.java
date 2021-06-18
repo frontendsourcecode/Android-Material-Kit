@@ -10,9 +10,9 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 
-import com.google.android.material.tabs.TabLayout;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.tabs.TabLayout;
 
 public class DashboardWalletGreen extends AppCompatActivity {
     private TabLayout tab_layout;

@@ -8,6 +8,8 @@ import android.widget.Toast;
 import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
+import com.frontend.source.materialkit.R;
+import com.frontend.source.materialkit.utils.Tools;
 import com.google.android.gms.maps.CameraUpdate;
 import com.google.android.gms.maps.CameraUpdateFactory;
 import com.google.android.gms.maps.GoogleMap;
@@ -17,8 +19,6 @@ import com.google.android.gms.maps.model.LatLng;
 import com.google.android.gms.maps.model.Marker;
 import com.google.android.gms.maps.model.MarkerOptions;
 import com.google.android.material.bottomsheet.BottomSheetBehavior;
-import com.frontend.source.materialkit.R;
-import com.frontend.source.materialkit.utils.Tools;
 
 public class BottomSheetMap extends AppCompatActivity {
 

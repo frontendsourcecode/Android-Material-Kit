@@ -9,10 +9,10 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 import androidx.core.widget.NestedScrollView;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
 import com.frontend.source.materialkit.utils.ViewAnimation;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
 
 public class ArticleMediumDark extends AppCompatActivity {
 

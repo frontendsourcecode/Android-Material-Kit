@@ -29,7 +29,7 @@ import java.util.Random;
 @SuppressWarnings("ResourceType")
 public class DataGenerator {
 
-    private static Random r = new Random();
+    private static final Random r = new Random();
 
     public static int randInt(int max) {
         int min = 0;

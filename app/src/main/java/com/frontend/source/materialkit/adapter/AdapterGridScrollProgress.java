@@ -21,13 +21,11 @@ public class AdapterGridScrollProgress extends RecyclerView.Adapter<RecyclerView
 
     private final int VIEW_ITEM = 1;
     private final int VIEW_PROGRESS = 0;
-
+    private final Context ctx;
     private int item_per_display = 0;
     private List<ProgressImage> items = new ArrayList<>();
     private boolean loading;
     private OnLoadMoreListener onLoadMoreListener = null;
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterGridScrollProgress(Context context, int item_per_display, List<ProgressImage> items) {

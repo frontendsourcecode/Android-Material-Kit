@@ -18,9 +18,8 @@ import java.util.List;
 
 public class AdapterListBasic extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<People> items = new ArrayList<>();
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterListBasic(Context context, List<People> items) {

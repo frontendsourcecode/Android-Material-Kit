@@ -25,6 +25,36 @@ import com.frontend.source.materialkit.utils.Tools;
 public class PaymentCardCollections extends AppCompatActivity {
 
     private static final int MAX_STEP = 4;
+    private final String[] postfix_array = {
+            "**** **** **** 6223",
+            "**** **** **** 1027",
+            "**** **** **** 5519",
+            "**** **** **** 4661"
+    };
+    private final String[] expire_array = {
+            "08/20",
+            "11/23",
+            "05/19",
+            "06/25",
+    };
+    private final String[] cvv_array = {
+            "771",
+            "098",
+            "334",
+            "558",
+    };
+    private final int[] logo_array = {
+            R.drawable.ic_visa_new,
+            R.drawable.ic_mastercard_new,
+            R.drawable.ic_mastercard_new,
+            R.drawable.ic_visa_new
+    };
+    private final int[] color_array = {
+            R.color.deep_orange_800,
+            R.color.blue_500,
+            R.color.amber_800,
+            R.color.deep_purple_500
+    };
     //  viewpager change listener
     ViewPager.OnPageChangeListener viewPagerPageChangeListener = new ViewPager.OnPageChangeListener() {
 
@@ -45,36 +75,6 @@ public class PaymentCardCollections extends AppCompatActivity {
     };
     private ViewPager viewPager;
     private MyViewPagerAdapter myViewPagerAdapter;
-    private String[] postfix_array = {
-            "**** **** **** 6223",
-            "**** **** **** 1027",
-            "**** **** **** 5519",
-            "**** **** **** 4661"
-    };
-    private String[] expire_array = {
-            "08/20",
-            "11/23",
-            "05/19",
-            "06/25",
-    };
-    private String[] cvv_array = {
-            "771",
-            "098",
-            "334",
-            "558",
-    };
-    private int[] logo_array = {
-            R.drawable.ic_visa_new,
-            R.drawable.ic_mastercard_new,
-            R.drawable.ic_mastercard_new,
-            R.drawable.ic_visa_new
-    };
-    private int[] color_array = {
-            R.color.deep_orange_800,
-            R.color.blue_500,
-            R.color.amber_800,
-            R.color.deep_purple_500
-    };
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {

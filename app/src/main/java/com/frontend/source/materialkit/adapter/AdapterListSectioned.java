@@ -20,9 +20,8 @@ public class AdapterListSectioned extends RecyclerView.Adapter<RecyclerView.View
 
     private final int VIEW_ITEM = 1;
     private final int VIEW_SECTION = 0;
-
+    private final Context ctx;
     private List<People> items = new ArrayList<>();
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
 
     public AdapterListSectioned(Context context, List<People> items) {

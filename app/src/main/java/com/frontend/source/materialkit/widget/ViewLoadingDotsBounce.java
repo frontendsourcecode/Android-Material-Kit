@@ -31,10 +31,10 @@ public class ViewLoadingDotsBounce extends LinearLayout {
     private static final int OBJECT_SIZE = 3;
     private static final int POST_DIV = 6;
     private static final int DURATION = 500;
+    private final GradientDrawable circle = new GradientDrawable();
     boolean onLayoutReach = false;
     private Context context;
     private ImageView[] img;
-    private GradientDrawable circle = new GradientDrawable();
     private ObjectAnimator[] animator;
 
     public ViewLoadingDotsBounce(Context context) {

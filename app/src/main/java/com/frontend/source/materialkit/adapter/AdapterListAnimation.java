@@ -20,9 +20,8 @@ import java.util.List;
 
 public class AdapterListAnimation extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<People> items = new ArrayList<>();
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
     private int animation_type = 0;
     private int lastPosition = -1;

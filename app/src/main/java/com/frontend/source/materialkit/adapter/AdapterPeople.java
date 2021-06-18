@@ -19,9 +19,8 @@ import java.util.List;
 
 public class AdapterPeople extends RecyclerView.Adapter<RecyclerView.ViewHolder> {
 
+    private final Context ctx;
     private List<People> items = new ArrayList<>();
-    private Context ctx;
-
     private OnItemClickListener onItemClickListener;
 
     public AdapterPeople(Context context, List<People> items) {

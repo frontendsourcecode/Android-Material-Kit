@@ -23,9 +23,8 @@ import java.util.List;
 
 public class AdapterListDrag extends RecyclerView.Adapter<RecyclerView.ViewHolder> implements DragItemTouchHelper.MoveHelperAdapter {
 
+    private final Context ctx;
     private List<Social> items = new ArrayList<>();
-
-    private Context ctx;
     private OnItemClickListener mOnItemClickListener;
     private OnStartDragListener mDragStartListener = null;
 

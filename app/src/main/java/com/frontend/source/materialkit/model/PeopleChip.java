@@ -7,10 +7,10 @@ import com.pchmn.materialchips.model.ChipInterface;
 
 public class PeopleChip implements ChipInterface {
 
-    private String id;
-    private Drawable image;
-    private String name;
-    private String info;
+    private final String id;
+    private final Drawable image;
+    private final String name;
+    private final String info;
 
     public PeopleChip(String id, Drawable image, String name, String info) {
         this.id = id;

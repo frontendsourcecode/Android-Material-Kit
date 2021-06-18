@@ -8,10 +8,10 @@ import android.widget.Toast;
 import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.Toolbar;
 
-import com.hootsuite.nachos.NachoTextView;
-import com.hootsuite.nachos.terminator.ChipTerminatorHandler;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.Tools;
+import com.hootsuite.nachos.NachoTextView;
+import com.hootsuite.nachos.terminator.ChipTerminatorHandler;
 
 import java.util.ArrayList;
 import java.util.List;

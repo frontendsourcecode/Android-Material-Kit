@@ -20,32 +20,30 @@ import androidx.appcompat.app.AppCompatActivity;
 import androidx.appcompat.widget.AppCompatSeekBar;
 import androidx.appcompat.widget.Toolbar;
 
-import com.google.android.material.floatingactionbutton.FloatingActionButton;
-import com.google.android.material.snackbar.Snackbar;
-import com.mikhaellopez.circularimageview.CircularImageView;
 import com.frontend.source.materialkit.R;
 import com.frontend.source.materialkit.utils.MusicUtils;
 import com.frontend.source.materialkit.utils.Tools;
+import com.google.android.material.floatingactionbutton.FloatingActionButton;
+import com.google.android.material.snackbar.Snackbar;
+import com.mikhaellopez.circularimageview.CircularImageView;
 
 public class PlayerMusicAlbumCircle extends AppCompatActivity {
 
+    // Handler to update UI timer, progress bar etc,.
+    private final Handler mHandler = new Handler();
     private View parent_view;
     private AppCompatSeekBar seek_song_progressbar;
     private FloatingActionButton bt_play;
     private TextView tv_song_current_duration, tv_song_total_duration;
     private CircularImageView image;
-
     // Media Player
     private MediaPlayer mp;
-    // Handler to update UI timer, progress bar etc,.
-    private Handler mHandler = new Handler();
-
     //private SongsManager songManager;
     private MusicUtils utils;
     /**
      * Background Runnable thread
      */
-    private Runnable mUpdateTimeTask = new Runnable() {
+    private final Runnable mUpdateTimeTask = new Runnable() {
         public void run() {
             updateTimerAndSeekbar();
 

@@ -13,8 +13,8 @@ import androidx.appcompat.widget.Toolbar;
 import androidx.core.view.GravityCompat;
 import androidx.drawerlayout.widget.DrawerLayout;
 
-import com.google.android.material.navigation.NavigationView;
 import com.frontend.source.materialkit.R;
+import com.google.android.material.navigation.NavigationView;
 
 public class ProfileDrawerImage extends AppCompatActivity {
 
