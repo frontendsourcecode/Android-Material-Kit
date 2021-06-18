@@ -1,0 +1,143 @@
+package com.frontend.source.materialkit.activity.snackbartoast;
+
+import android.graphics.Color;
+import android.os.Bundle;
+import android.view.Menu;
+import android.view.MenuItem;
+import android.view.View;
+import android.view.ViewGroup;
+import android.widget.TextView;
+import android.widget.Toast;
+
+import androidx.appcompat.app.AppCompatActivity;
+import androidx.appcompat.widget.Toolbar;
+import androidx.cardview.widget.CardView;
+
+import com.google.android.material.snackbar.Snackbar;
+import com.frontend.source.materialkit.R;
+import com.frontend.source.materialkit.utils.Tools;
+
+public class SnackbarToastBasic extends AppCompatActivity {
+
+    private View parent_view;
+
+    @Override
+    protected void onCreate(Bundle savedInstanceState) {
+        super.onCreate(savedInstanceState);
+        setContentView(R.layout.activity_snackbar_toast_basic);
+        parent_view = findViewById(android.R.id.content);
+
+        initToolbar();
+        initComponent();
+    }
+
+    private void initToolbar() {
+        Toolbar toolbar = findViewById(R.id.toolbar);
+        toolbar.setNavigationIcon(R.drawable.ic_menu);
+        setSupportActionBar(toolbar);
+        getSupportActionBar().setTitle("Snackbar & Toast");
+        getSupportActionBar().setDisplayHomeAsUpEnabled(true);
+        Tools.setSystemBarColor(this);
+    }
+
+    private void initComponent() {
+        findViewById(R.id.toast_simple).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Toast.makeText(getApplicationContext(), "Simple Toast", Toast.LENGTH_SHORT).show();
+            }
+        });
+
+        findViewById(R.id.toast_custom).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View layout = getLayoutInflater().inflate(R.layout.toast_custom, (ViewGroup) findViewById(R.id.custom_toast_layout_id));
+                TextView text = layout.findViewById(R.id.text);
+                text.setText("Custom Toast!");
+
+                Toast toast = new Toast(getApplicationContext());
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setView(layout);
+                toast.show();
+            }
+        });
+
+        findViewById(R.id.toast_custom_colored).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                View layout = getLayoutInflater().inflate(R.layout.toast_custom, (ViewGroup) findViewById(R.id.custom_toast_layout_id));
+                TextView text = layout.findViewById(R.id.text);
+                text.setTextColor(Color.WHITE);
+                text.setText("Custom Toast!");
+                CardView lyt_card = layout.findViewById(R.id.lyt_card);
+                lyt_card.setCardBackgroundColor(getResources().getColor(R.color.yellow_800));
+
+                Toast toast = new Toast(getApplicationContext());
+                toast.setDuration(Toast.LENGTH_LONG);
+                toast.setView(layout);
+                toast.show();
+            }
+        });
+
+        findViewById(R.id.snackbar_simple).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                Snackbar.make(parent_view, "Simple Snackbar", Snackbar.LENGTH_SHORT).show();
+            }
+        });
+
+        findViewById(R.id.snackbar_with_action).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snackBarWithAction();
+            }
+        });
+
+        findViewById(R.id.snackbar_with_action_indefinite).setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                snackBarWithActionIndefinite();
+            }
+        });
+    }
+
+    private void snackBarWithAction() {
+        Snackbar snackbar = Snackbar.make(parent_view, "Snackbar With Action", Snackbar.LENGTH_LONG)
+                .setAction("UNDO", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar.make(parent_view, "UNDO CLICKED!", Snackbar.LENGTH_SHORT).show();
+                    }
+                });
+        snackbar.show();
+    }
+
+    private void snackBarWithActionIndefinite() {
+        Snackbar snackbar = Snackbar.make(parent_view, "Snackbar With Action INDEFINITE", Snackbar.LENGTH_INDEFINITE)
+                .setAction("UNDO", new View.OnClickListener() {
+                    @Override
+                    public void onClick(View view) {
+                        Snackbar.make(parent_view, "UNDO CLICKED!", Snackbar.LENGTH_SHORT).show();
+                    }
+                });
+        snackbar.show();
+    }
+
+    @Override
+    public boolean onCreateOptionsMenu(Menu menu) {
+        getMenuInflater().inflate(R.menu.menu_search_setting, menu);
+        return true;
+    }
+
+
+    @Override
+    public boolean onOptionsItemSelected(MenuItem item) {
+        if (item.getItemId() == android.R.id.home) {
+            finish();
+        } else {
+            Toast.makeText(getApplicationContext(), item.getTitle(), Toast.LENGTH_SHORT).show();
+        }
+        return super.onOptionsItemSelected(item);
+    }
+
+}
