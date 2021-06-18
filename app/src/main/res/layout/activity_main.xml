@@ -9,7 +9,7 @@
     <androidx.core.widget.NestedScrollView
         android:layout_width="match_parent"
         android:layout_height="match_parent"
-        android:background="@color/grey_90"
+        android:background="@color/colorPrimaryDark"
         android:fillViewport="true"
         android:scrollbars="vertical"
         app:layout_behavior="@string/appbar_scrolling_view_behavior">
@@ -67,8 +67,7 @@
                     android:id="@+id/imageView"
                     android:layout_width="60dp"
                     android:layout_height="60dp"
-                    android:tint="@color/colorPrimary"
-                    app:srcCompat="@drawable/logo" />
+                    app:srcCompat="@drawable/logo_round" />
 
             </LinearLayout>
 

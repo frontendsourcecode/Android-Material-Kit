@@ -1018,9 +1018,7 @@ public class MainMenu extends AppCompatActivity {
         items.add(new MainMenuAdapter.ListItem(107, "Map Blue", -1, MenuType.SUB_HEADER));
 
         items.add(new MainMenuAdapter.ListItem(200, "Bottom Sheet", R.drawable.ic_call_to_actio, MenuType.HEADER));
-        items.add(new MainMenuAdapter.ListItem(201, "Basic", -1, MenuType.SUB_HEADER));
         items.add(new MainMenuAdapter.ListItem(202, "List", -1, MenuType.SUB_HEADER));
-        items.add(new MainMenuAdapter.ListItem(203, "Map", -1, MenuType.SUB_HEADER));
         items.add(new MainMenuAdapter.ListItem(204, "Floating", -1, MenuType.SUB_HEADER));
         items.add(new MainMenuAdapter.ListItem(205, "Full", -1, MenuType.SUB_HEADER));
 
@@ -1032,7 +1030,6 @@ public class MainMenu extends AppCompatActivity {
         items.add(new MainMenuAdapter.ListItem(305, "Fab More Text", -1, MenuType.SUB_HEADER));
 
         items.add(new MainMenuAdapter.ListItem(400, "Cards", R.drawable.ic_note, MenuType.HEADER));
-        items.add(new MainMenuAdapter.ListItem(401, "Basic", -1, MenuType.SUB_HEADER));
         items.add(new MainMenuAdapter.ListItem(402, "Timeline", -1, MenuType.SUB_HEADER));
         items.add(new MainMenuAdapter.ListItem(403, "Overlap", -1, MenuType.SUB_HEADER));
         items.add(new MainMenuAdapter.ListItem(404, "Wizard", -1, MenuType.SUB_HEADER));
@@ -1330,7 +1327,7 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://codecanyon.net/user/dream_space/portfolio"));
+                i.setData(Uri.parse("https://www.youtube.com/channel/UC9f9rHG07TathjHvgAKhHtA"));
                 startActivity(i);
             }
         });
@@ -1370,7 +1367,7 @@ public class MainMenu extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://codecanyon.net/user/dream_space/portfolio"));
+                i.setData(Uri.parse("https://www.youtube.com/channel/UC9f9rHG07TathjHvgAKhHtA"));
                 startActivity(i);
             }
         });

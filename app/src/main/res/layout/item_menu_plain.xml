@@ -17,7 +17,7 @@
             android:id="@+id/item_menu_group_image"
             android:layout_width="@dimen/spacing_mxlarge"
             android:layout_height="@dimen/spacing_mxlarge"
-            android:tint="@color/colorPrimary"
+            android:tint="@color/white"
             app:srcCompat="@drawable/ic_event" />
 
         <TextView
@@ -29,7 +29,7 @@
             android:layout_marginRight="@dimen/spacing_large"
             android:layout_weight="1"
             android:textAppearance="@style/TextAppearance.AppCompat.Subhead"
-            android:textColor="@color/grey_10"
+            android:textColor="@color/white"
             tools:text="Group Name" />
 
     </LinearLayout>

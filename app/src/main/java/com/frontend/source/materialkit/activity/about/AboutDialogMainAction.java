@@ -85,7 +85,7 @@ public class AboutDialogMainAction extends AppCompatActivity {
             @Override
             public void onClick(View v) {
                 Intent i = new Intent(Intent.ACTION_VIEW);
-                i.setData(Uri.parse("https://codecanyon.net/user/dream_space/portfolio"));
+                i.setData(Uri.parse("https://www.youtube.com/channel/UC9f9rHG07TathjHvgAKhHtA"));
                 startActivity(i);
             }
         });
