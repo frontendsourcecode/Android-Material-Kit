@@ -97,12 +97,6 @@ public class AboutDialogMainAction extends AppCompatActivity {
             }
         });
 
-        dialog.findViewById(R.id.bt_rate).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Tools.rateAction(AboutDialogMainAction.this);
-            }
-        });
 
         dialog.show();
         dialog.getWindow().setAttributes(lp);

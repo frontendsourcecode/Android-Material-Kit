@@ -1339,12 +1339,6 @@ public class MainMenu extends AppCompatActivity {
             }
         });
 
-        dialog.findViewById(R.id.bt_rate).setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View v) {
-                Tools.rateAction(MainMenu.this);
-            }
-        });
 
         sharedPref.setFirstLaunch(false);
         dialog.show();
